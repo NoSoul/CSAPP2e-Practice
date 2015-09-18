@@ -36,3 +36,16 @@
     B. 0x503c − 0x40 = ___
     C. 0x503c + 64 = ___
     D. 0x50ea − 0x503c = ___
+
+2.5 Consider the following three calls to show_bytes:
+    
+    int val = 0x87654321;
+    byte_pointer valp = (byte_pointer) &val;
+    show_bytes(valp, 1); /* A. */
+    show_bytes(valp, 2); /* B. */
+    show_bytes(valp, 3); /* C. */
+Indicate which of the following values will be printed by each call on a little-endian machine and on a big-endian machine:
+    
+    A. Little endian:___    Big endian:___
+    B. Little endian:___    Big endian:___
+    C. Little endian:___    Big endian:___
