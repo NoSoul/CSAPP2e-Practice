@@ -55,3 +55,9 @@ Indicate which of the following values will be printed by each call on a little-
     A. Write the binary representations of these two hexadecimal values.
     B. Shift these two strings relative to one another to maximize the number of matching bits. How many bits match?
     C. What parts of the strings do not match?
+
+2.7 What would be printed as a result of the following call to show_bytes?
+    
+    const char *s = "abcdef";
+    show_bytes((byte_pointer) s, strlen(s));
+Note that letters ‘a’ through ‘z’ have ASCII codes 0x61 through 0x7A.
