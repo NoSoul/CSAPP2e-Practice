@@ -49,3 +49,9 @@ Indicate which of the following values will be printed by each call on a little-
     A. Little endian:___    Big endian:___
     B. Little endian:___    Big endian:___
     C. Little endian:___    Big endian:___
+
+2.6 Using show_int and show_float, we determine that the integer 3510593 has hexadecimal representation 0x00359141, while the floating-point number 3510593.0 has hexadecimal representation 0x4A564504.
+    
+    A. Write the binary representations of these two hexadecimal values.
+    B. Shift these two strings relative to one another to maximize the number of matching bits. How many bits match?
+    C. What parts of the strings do not match?
