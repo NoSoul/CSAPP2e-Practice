@@ -61,3 +61,14 @@ Indicate which of the following values will be printed by each call on a little-
     const char *s = "abcdef";
     show_bytes((byte_pointer) s, strlen(s));
 Note that letters ‘a’ through ‘z’ have ASCII codes 0x61 through 0x7A.
+
+2.8 Fill in the following table showing the results of evaluating Boolean operations on bit vectors.
+
+    Operation   Result
+    a           [01101001]
+    b           [01010101]
+    ~a          ___
+    ~b          ___
+    a & b       ___
+    a | b       ___
+    a ^ b       ___
