@@ -72,3 +72,27 @@ Note that letters ‘a’ through ‘z’ have ASCII codes 0x61 through 0x7A.
     a & b       ___
     a | b       ___
     a ^ b       ___
+
+2.9 Computers generate color pictures on a video screen or liquid crystal display by mixing three different colors of light: red, green, and blue. Imagine a simple scheme, with three different lights, each of which can be turned on or off, projecting onto a glass screen:
+
+![Alt text](../images/p2.9-0.png)
+
+We can then create eight different colors based on the absence(0) or presence(1) of light sources R, G, and B:
+
+    R G B  Color
+    0 0 0  Black
+    0 0 1  Blue
+    0 1 0  Green
+    0 1 1  Cyan
+    1 0 0  Red
+    1 0 1  Magenta
+    1 1 0  Yellow
+    1 1 1  White
+Each of these colors can be represented as a bit vector of length 3, and we can apply Boolean operations to them.
+    
+    A. The complement of a color is formed by turning off the lights that are on and turning on the lights that are off. What would be the complement of each of the eight colors listed above?
+    B. Describe the effect of applying Boolean operations on the following colors:
+
+        Blue | Green = ___
+        Yellow & Cyan = ___
+        Red ^ Magenta = ___
