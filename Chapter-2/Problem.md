@@ -73,7 +73,8 @@ Note that letters ‘a’ through ‘z’ have ASCII codes 0x61 through 0x7A.
     a | b       ___
     a ^ b       ___
 
-2.9 Computers generate color pictures on a video screen or liquid crystal display by mixing three different colors of light: red, green, and blue. Imagine a simple scheme, with three different lights, each of which can be turned on or off, projecting onto a glass screen:
+2.9 Computers generate color pictures on a video screen or liquid crystal display by mixing three different colors of light: red, green, and blue.
+Imagine a simple scheme, with three different lights, each of which can be turned on or off, projecting onto a glass screen:
 
 ![Alt text](../images/p2.9-0.png)
 
@@ -90,9 +91,30 @@ We can then create eight different colors based on the absence(0) or presence(1)
     1 1 1  White
 Each of these colors can be represented as a bit vector of length 3, and we can apply Boolean operations to them.
     
-    A. The complement of a color is formed by turning off the lights that are on and turning on the lights that are off. What would be the complement of each of the eight colors listed above?
+    A. The complement of a color is formed by turning off the lights that are on and turning on the lights that are off.
+        What would be the complement of each of the eight colors listed above?
     B. Describe the effect of applying Boolean operations on the following colors:
 
         Blue | Green = ___
         Yellow & Cyan = ___
         Red ^ Magenta = ___
+2.10 As an application of the property that a ^ a = 0 for any bit vector a, consider the following program:
+
+    void inplace_swap(int *x, int *y)
+    {
+        *y = *x ^ *y; /* Step 1 */
+        *x = *x ^ *y; /* Step 2 */
+        *y = *x ^ *y; /* Step 3 */
+    }
+As the name implies, we claim that the effect of this procedure is to swap the values stored at the locations denoted by pointer variables x and y.
+Note that unlike the usual technique for swapping two values, we do not need a third location to temporarily store one value while we are moving the other.
+There is no performance advantage to this way of swapping; it is merely an intellectual amusement.
+
+Starting with values a and b in the locations pointed to by x and y, respectively, fill in the table that follows, giving the values stored at the two locations after each step of the procedure.
+Use the properties of ^ to show that the desired effect is achieved. Recall that every element is its own additive inverse (that is, a ^ a = 0).
+
+    Step        *x  *y
+    Initially   a   b
+    Step 1      ___ ___
+    Step 2      ___ ___
+    Step 3      ___ ___
