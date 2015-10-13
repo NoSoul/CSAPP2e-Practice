@@ -178,3 +178,5 @@ Hint: Write C expressions for the operations bis and bic.
     x | y       ___     x || y      ___
     ~x | ~y     ___     !x || !y    ___
     x & !y      ___     x && ~y     ___
+
+2.15 Using only bit-level and logical operations, write a C expression that is equivalent to x == y. In other words, it will return 1 when x and y are equal, and 0 otherwise.
