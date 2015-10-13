@@ -170,3 +170,11 @@ Hint: Write C expressions for the operations bis and bic.
         int result = ___;
         return result;
     }
+
+2.14 Suppose that x and y have byte values 0x66 and 0x39, respectively. Fill in the following table indicating the byte values of the different C expressions:
+
+    Expression  Value   Expression  Value
+    x & y       ___     x && y      ___
+    x | y       ___     x || y      ___
+    ~x | ~y     ___     !x || !y    ___
+    x & !y      ___     x && ~y     ___
