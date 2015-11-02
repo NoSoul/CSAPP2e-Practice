@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 2.1 Perform the following number conversions
 
     A. 0x39A7F8 to binary
@@ -180,3 +181,15 @@ Hint: Write C expressions for the operations bis and bic.
     x & !y      ___     x && ~y     ___
 
 2.15 Using only bit-level and logical operations, write a C expression that is equivalent to x == y. In other words, it will return 1 when x and y are equal, and 0 otherwise.
+
+2.16 Fill in the table below showing the effects of the different shift operations on single-byte quantities.
+The best way to think about shift operations is to work with binary representations.
+Convert the initial values to binary, perform the shifts, and then convert back to hexadecimal. Each of the answers should be 8 binary digits or 2 hexadecimal digits.
+
+                                    (Logical)       (Arithmetic)
+    x               x << 3          x >> 2          x >> 2
+    Hex     Binary  Binary  Hex     Binary  Hex     Binary  Hex
+    0xC3
+    0x75
+    0x87
+    0x66
