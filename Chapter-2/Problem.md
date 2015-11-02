@@ -193,3 +193,15 @@ Convert the initial values to binary, perform the shifts, and then convert back 
     0x75
     0x87
     0x66
+
+2.17 Assuming w = 4, we can assign a numeric value to each possible hexadecimal digit, assuming either an unsigned or a two’s-complement interpretation.
+Fill in the following table according to these interpretations by writing out the nonzero powers of two in the summations shown in Equations 2.1 and 2.3:
+
+Hexadecimal|Binary|B2U<sub>4</sub>(x)|B2T<sub>4</sub>(x) 
+-----------|------|------------------|------------------
+0xE        |[1110]|  2^3+2^2+2^1=14  |  -2^3+2^2+2^1=-2 
+0x0        |      |                  |                  
+0x5        |      |                  |                  
+0x8        |      |                  |                  
+0xD        |      |                  |                  
+0xF        |      |                  |                  
