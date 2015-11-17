@@ -233,3 +233,14 @@ For the lines labeled A–J (on the right) in the following listing, convert the
     804836b: 8b 45 08           mov 0x8(%ebp),%eax
     804836e: 83 c0 20           add $0x20,%eax              J.
     8048371: 8b 00              mov (%eax),%eax
+
+2.19 Using the table you filled in when solving Problem 2.17, fill in the following table describing the function T2U<sub>4</sub>:
+
+x |T2U<sub>4</sub>
+--|---------------
+−8|__
+−3|__
+−2|__
+−1|__
+0 |__
+5 |__
