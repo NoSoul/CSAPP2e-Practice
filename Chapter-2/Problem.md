@@ -244,3 +244,5 @@ x |T2U<sub>4</sub>
 −1|__
 0 |__
 5 |__
+
+2.20 Explain how Equation 2.6 applies to the entries in the table you generated when solving Problem 2.19.
