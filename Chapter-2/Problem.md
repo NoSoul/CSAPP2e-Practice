@@ -288,3 +288,15 @@ w         |fun1(w)|fun2(w)
 0xEDCBA987|__     |__
 
     B. Describe in words the useful computation each of these functions performs.
+
+2.24 Suppose we truncate a 4-bit value (represented by hex digits 0 through F) to a 3-bit value (represented as hex digits 0 through 7).
+Fill in the table below showing the effect of this truncation for some cases, in terms of the unsigned and two’s-complement interpretations of those bit patterns.
+
+Hex Original|Hex Truncated|Unsigned Original|Unsigned Truncated|Two’s complement Original|Two’s complement Truncated
+------------|-------------|-----------------|------------------|-------------------------|--------------------------
+0           |0            |0                |__                |0                        |__
+2           |2            |2                |__                |2                        |__
+9           |1            |9                |__                |-7                       |__
+B           |3            |11               |__                |-5                       |__
+F           |7            |15               |__                |-1                       |__
+
