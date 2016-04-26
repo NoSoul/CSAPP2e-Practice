@@ -258,3 +258,11 @@ Expression                  |Type|Evaluation
 -2147483647-1U < 2147483647 |__  |__
 -2147483647-1 < -2147483647 |__  |__
 -2147483647-1U < -2147483647|__  |__
+
+2.22 Show that each of the following bit vectors is a two’s-complement representation of −5 by applying Equation 2.3:
+
+    A. [1011]
+    B. [11011]
+    C. [111011]
+
+Observe that the second and third bit vectors can be derived from the first by sign extension.
