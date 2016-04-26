@@ -1,4 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 2.1 Perform the following number conversions
 
     A. 0x39A7F8 to binary
@@ -246,3 +245,16 @@ x |T2U<sub>4</sub>
 5 |__
 
 2.20 Explain how Equation 2.6 applies to the entries in the table you generated when solving Problem 2.19.
+
+2.21 Assuming the expressions are evaluated on a 32-bit machine that uses two’s-complement arithmetic, fill in the following table describing the effect of casting and relational operations, in the style of Figure 2.18:
+
+![Alt text](../images/p2.21-0.png)
+
+
+Expression                  |Type|Evaluation
+----------------------------|----|----------
+-2147483647-1 == 2147483648U|__  |__
+ -2147483647-1 < 2147483647 |__  |__
+-2147483647-1U < 2147483647 |__  |__
+-2147483647-1 < -2147483647 |__  |__
+-2147483647-1U < -2147483647|__  |__
