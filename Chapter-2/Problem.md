@@ -250,7 +250,6 @@ x |T2U<sub>4</sub>
 
 ![Alt text](../images/p2.21-0.png)
 
-
 Expression                  |Type|Evaluation
 ----------------------------|----|----------
 -2147483647-1 == 2147483648U|__  |__
@@ -264,5 +263,28 @@ Expression                  |Type|Evaluation
     A. [1011]
     B. [11011]
     C. [111011]
-
 Observe that the second and third bit vectors can be derived from the first by sign extension.
+
+2.23 Consider the following C functions:
+
+    int fun1(unsigned word) {
+        return (int) ((word << 24) >> 24);
+    }
+    int fun2(unsigned word) {
+        return ((int) word << 24) >> 24;
+    }
+Assume these are executed on a machine with a 32-bit word size that uses two’s-complement arithmetic.
+Assume also that right shifts of signed values are per-formed arithmetically, while right shifts of unsigned values are performed logically.
+
+    A. Fill in the following table showing the effect of these functions for several example arguments.
+    You will find it more convenient to work with a hexa-decimal representation.
+    Just remember that hex digits 8 through F have their most significant bits equal to 1.
+
+w         |fun1(w)|fun2(w)
+----------|-------|-------
+0x00000076|__     |__
+0x87654321|__     |__
+0x000000C9|__     |__
+0xEDCBA987|__     |__
+
+    B. Describe in words the useful computation each of these functions performs.
